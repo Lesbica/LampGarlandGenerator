@@ -28,7 +28,12 @@ namespace LampGarlandGenerator
             }
         }
 
-        private void Form1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
             Point randomLocation = new Point(random.Next(0, Width - 50), random.Next(0, Height - 50));
 
